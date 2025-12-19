@@ -1,9 +1,34 @@
 body {
-  background-color: powderblue;
+  margin: 0;
+  padding: 0;
 }
-h1 {
-  color: blue;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #bd4d19;
+  display: flex;
+  justify-content: center;
 }
-p {
-  color: rgb(117, 107, 107);
+
+ul li {
+  float: left;
+  padding: 0;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 26px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #b3c421;
+}
+ul li a:active{
+    background-color: aquamarine;
 }
