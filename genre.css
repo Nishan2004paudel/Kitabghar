@@ -19,81 +19,202 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Selection Action Bar */
-.selection-bar {
-  display: none;
-  align-items: center;
-  gap: 15px;
-  background: linear-gradient(135deg, #ce2a14, #4d0404);
-  color: white;
-  padding: 8px 20px;
-  border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.3s ease;
-}
-
-.selection-bar.visible {
+/* Book Actions Buttons */
+.book-actions {
   display: flex;
+  gap: 10px;
+  padding: 15px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.selection-info {
-  font-size: 0.95rem;
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-.action-btn {
-  padding: 8px 18px;
+.card-btn {
+  padding: 10px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.buy-btn {
-  background-color: #28a745;
+.card-btn.buy-btn {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
   color: white;
 }
 
-.buy-btn:hover {
-  background-color: #218838;
-  transform: scale(1.05);
+.card-btn.buy-btn:hover {
+  background: linear-gradient(135deg, #218838 0%, #1aa179 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
 }
 
-.rent-btn {
-  background-color: #f1ef59;
+.card-btn.rent-btn {
+  background: linear-gradient(135deg, #ce2a14 0%, #ff6b35 100%);
+  color: white;
+}
+
+.card-btn.rent-btn:hover {
+  background: linear-gradient(135deg, #a82210 0%, #e55a2b 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(206, 42, 20, 0.4);
+}
+
+.card-btn i {
+  font-size: 0.85rem;
+}
+
+/* User Action Section - Sell/Rent Your Book */
+.user-action-section {
+  background: linear-gradient(135deg, #f1ef59 0%, #f9f7c9 100%);
+  padding: 60px 40px;
+  margin-top: 40px;
+}
+
+.user-action-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user-action-title {
   color: #4d0404;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.rent-btn:hover {
-  background-color: #e6e44e;
-  transform: scale(1.05);
+.user-action-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
 }
 
-.clear-btn {
-  background-color: rgba(255, 255, 255, 0.2);
+.user-action-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.user-action-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 350px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-action-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+
+.sell-card::before {
+  background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+.rent-card::before {
+  background: linear-gradient(90deg, #ce2a14, #ff6b35);
+}
+
+.user-action-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.action-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 2rem;
+}
+
+.sell-card .action-icon {
+  background: linear-gradient(135deg, #28a745, #20c997);
   color: white;
-  padding: 8px 12px;
 }
 
-.clear-btn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+.rent-card .action-icon {
+  background: linear-gradient(135deg, #ce2a14, #ff6b35);
+  color: white;
+}
+
+.user-action-card h3 {
+  color: #4d0404;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.user-action-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.user-action-btn {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sell-btn {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  box-shadow: 0 5px 20px rgba(40, 167, 69, 0.3);
+}
+
+.sell-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5);
+}
+
+.rent-out-btn {
+  background: linear-gradient(135deg, #ce2a14, #ff6b35);
+  color: white;
+  box-shadow: 0 5px 20px rgba(206, 42, 20, 0.3);
+}
+
+.rent-out-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(206, 42, 20, 0.5);
 }
 
 /* Toggle Button Styles */
 .toggle-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 30px 20px;
   margin-top: 20px;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 
 .toggle-btn {
@@ -159,38 +280,12 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  border: 3px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .book-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.book-card.selected {
-  border: 3px solid #ce2a14;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(206, 42, 20, 0.4);
-}
-
-.book-card.selected::after {
-  content: '\f00c';
-  font-family: FontAwesome;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ce2a14;
-  color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
 }
 
 .book-card img {

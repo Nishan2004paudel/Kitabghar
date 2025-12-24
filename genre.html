@@ -21,25 +21,12 @@
   </div>
 </div>
 
-<!-- Toggle Button and Actions -->
+<!-- Toggle Button -->
 <div class="toggle-container">
   <button id="toggleBtn" class="toggle-btn" onclick="toggleCategory()">
     <span id="nepaliBtn" class="toggle-option active">Nepali</span>
     <span id="internationalBtn" class="toggle-option">International</span>
   </button>
-  
-  <div id="selectionBar" class="selection-bar">
-    <span class="selection-info"><span id="selectedCount">0</span> selected</span>
-    <button class="action-btn buy-btn" onclick="buyBooks()">
-      <i class="fa fa-shopping-cart"></i> Buy
-    </button>
-    <button class="action-btn rent-btn" onclick="rentBooks()">
-      <i class="fa fa-clock-o"></i> Rent
-    </button>
-    <button class="action-btn clear-btn" onclick="clearSelection()">
-      <i class="fa fa-times"></i>
-    </button>
-  </div>
 </div>
 
 <!-- Nepali Books Section -->
@@ -50,15 +37,31 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="Books_fictional_nepali/karnali.jpeg" alt="Karnali Blues">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Karnali Blues')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Karnali Blues')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_fictional_nepali/palpasa cafe.jpeg" alt="Palpasa Cafe">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Palpasa Cafe')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Palpasa Cafe')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_fictional_nepali/setodharti.jpeg" alt="Seto Dharti">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Seto Dharti')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Seto Dharti')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_fictional_nepali/sirishkoful.jpeg" alt="Shirish Ko Phool">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Shirish Ko Phool')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Shirish Ko Phool')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
@@ -69,15 +72,31 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="Books_nonfictional_nepal/aparacjit.jpeg" alt="Aparajit">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Aparajit')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Aparajit')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_nonfictional_nepal/eklo.jpeg" alt="Eklo">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Eklo')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Eklo')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_nonfictional_nepal/kathmandut.jpeg" alt="Kathmandu">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Kathmandu')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Kathmandu')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_nonfictional_nepal/sattasangrasha.jpeg" alt="Satta Sangrasha">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Satta Sangrasha')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Satta Sangrasha')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
@@ -88,15 +107,31 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="Books_academicandeducational_nepal/one.jpeg" alt="Academic Book 1">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 1')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 1')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_academicandeducational_nepal/two.jpeg" alt="Academic Book 2">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 2')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 2')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_academicandeducational_nepal/three.jpeg" alt="Academic Book 3">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 3')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 3')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_academicandeducational_nepal/four.jpeg" alt="Academic Book 4">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 4')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 4')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
@@ -107,15 +142,31 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="Books_history&culture_nepali/one.jpeg" alt="History Book 1">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('History Book 1')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('History Book 1')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_history&culture_nepali/two.jpeg" alt="History Book 2">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('History Book 2')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('History Book 2')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_history&culture_nepali/three.jpeg" alt="History Book 3">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('History Book 3')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('History Book 3')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_history&culture_nepali/four.jpeg" alt="History Book 4">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('History Book 4')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('History Book 4')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
@@ -129,15 +180,31 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="Books_fictional_international/athousand.jpeg" alt="A Thousand Splendid Suns">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('A Thousand Splendid Suns')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('A Thousand Splendid Suns')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_fictional_international/harrypoter.jpeg" alt="Harry Potter">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Harry Potter')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Harry Potter')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_fictional_international/thewoman.jpeg" alt="The Woman">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('The Woman')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('The Woman')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_fictional_international/wedonot.jpeg" alt="We Do Not">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('We Do Not')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('We Do Not')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
@@ -148,15 +215,31 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="Books_nonfictional_international/1929.jpeg" alt="1929">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('1929')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('1929')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_nonfictional_international/marktwain.jpeg" alt="Mark Twain">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Mark Twain')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Mark Twain')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_nonfictional_international/wagne.jpeg" alt="Wagner">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Wagner')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Wagner')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_nonfictional_international/ww2.jpeg" alt="World War 2">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('World War 2')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('World War 2')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
@@ -167,15 +250,31 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="books_academicandeducational_international/academicone.jpeg" alt="Academic Book 1">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 1')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 1')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="books_academicandeducational_international/academictwo.jpeg" alt="Academic Book 2">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 2')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 2')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="books_academicandeducational_international/academicthree.jpeg" alt="Academic Book 3">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 3')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 3')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="books_academicandeducational_international/academicfour.jpeg" alt="Academic Book 4">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Academic Book 4')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Academic Book 4')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
@@ -186,19 +285,65 @@
     <div class="books-grid">
       <div class="book-card">
         <img src="Books_historyandculture_international/and.jpeg" alt="And">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('And')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('And')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_historyandculture_international/culture.jpeg" alt="Culture">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('Culture')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('Culture')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_historyandculture_international/historytwo.jpeg" alt="History Two">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('History Two')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('History Two')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
       <div class="book-card">
         <img src="Books_historyandculture_international/worldhistory.jpg" alt="World History">
+        <div class="book-actions">
+          <button class="card-btn buy-btn" onclick="buyBook('World History')"><i class="fa fa-shopping-cart"></i> Buy</button>
+          <button class="card-btn rent-btn" onclick="rentBook('World History')"><i class="fa fa-clock-o"></i> Rent</button>
+        </div>
       </div>
     </div>
   </section>
 </div>
+
+<!-- Sell or Rent Your Book Section -->
+<section class="user-action-section">
+  <div class="user-action-container">
+    <h2 class="user-action-title">Have Books to Share?</h2>
+    <p class="user-action-subtitle">Turn your old books into cash or help others by renting them out!</p>
+    <div class="user-action-cards">
+      <div class="user-action-card sell-card" onclick="sellYourBook()">
+        <div class="action-icon">
+          <i class="fa fa-money"></i>
+        </div>
+        <h3>Sell Your Book</h3>
+        <p>List your books for sale and earn money from your collection</p>
+        <button class="user-action-btn sell-btn">
+          <i class="fa fa-tag"></i> Start Selling
+        </button>
+      </div>
+      <div class="user-action-card rent-card" onclick="rentYourBook()">
+        <div class="action-icon">
+          <i class="fa fa-exchange"></i>
+        </div>
+        <h3>Rent Your Book</h3>
+        <p>Lend your books to readers and earn passive income</p>
+        <button class="user-action-btn rent-out-btn">
+          <i class="fa fa-handshake-o"></i> Start Renting
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="footer-content">
