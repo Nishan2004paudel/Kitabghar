@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="genre.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="genre.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="nav-links">
+    <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a  href="aboutus.html"><i class="fa fa-fw fa-book"></i> About Us</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-fire"></i> Genre</a>
+    <a href="bestseller.html"><i class="fa fa-fw fa-star"></i> BestSeller</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+  </div>
+  <div class="search-box">
+    <i class="fa fa-search"></i>
+    <input type="text" placeholder="Search">
+  </div>
+</div>
+
+<!-- Toggle Button and Actions -->
+<div class="toggle-container">
+  <button id="toggleBtn" class="toggle-btn" onclick="toggleCategory()">
+    <span id="nepaliBtn" class="toggle-option active">Nepali</span>
+    <span id="internationalBtn" class="toggle-option">International</span>
+  </button>
+  
+  <div id="selectionBar" class="selection-bar">
+    <span class="selection-info"><span id="selectedCount">0</span> selected</span>
+    <button class="action-btn buy-btn" onclick="buyBooks()">
+      <i class="fa fa-shopping-cart"></i> Buy
+    </button>
+    <button class="action-btn rent-btn" onclick="rentBooks()">
+      <i class="fa fa-clock-o"></i> Rent
+    </button>
+    <button class="action-btn clear-btn" onclick="clearSelection()">
+      <i class="fa fa-times"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Nepali Books Section -->
+<div id="nepaliSection" class="category-section">
+  <!-- Fiction Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-book"></i> Fiction</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="Books_fictional_nepali/karnali.jpeg" alt="Karnali Blues">
+      </div>
+      <div class="book-card">
+        <img src="Books_fictional_nepali/palpasa cafe.jpeg" alt="Palpasa Cafe">
+      </div>
+      <div class="book-card">
+        <img src="Books_fictional_nepali/setodharti.jpeg" alt="Seto Dharti">
+      </div>
+      <div class="book-card">
+        <img src="Books_fictional_nepali/sirishkoful.jpeg" alt="Shirish Ko Phool">
+      </div>
+    </div>
+  </section>
+
+  <!-- Non-Fiction Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-lightbulb-o"></i> Non-Fiction</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="Books_nonfictional_nepal/aparacjit.jpeg" alt="Aparajit">
+      </div>
+      <div class="book-card">
+        <img src="Books_nonfictional_nepal/eklo.jpeg" alt="Eklo">
+      </div>
+      <div class="book-card">
+        <img src="Books_nonfictional_nepal/kathmandut.jpeg" alt="Kathmandu">
+      </div>
+      <div class="book-card">
+        <img src="Books_nonfictional_nepal/sattasangrasha.jpeg" alt="Satta Sangrasha">
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic and Educational Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-graduation-cap"></i> Academic and Educational</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="Books_academicandeducational_nepal/one.jpeg" alt="Academic Book 1">
+      </div>
+      <div class="book-card">
+        <img src="Books_academicandeducational_nepal/two.jpeg" alt="Academic Book 2">
+      </div>
+      <div class="book-card">
+        <img src="Books_academicandeducational_nepal/three.jpeg" alt="Academic Book 3">
+      </div>
+      <div class="book-card">
+        <img src="Books_academicandeducational_nepal/four.jpeg" alt="Academic Book 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- History and Culture Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-history"></i> History and Culture</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="Books_history&culture_nepali/one.jpeg" alt="History Book 1">
+      </div>
+      <div class="book-card">
+        <img src="Books_history&culture_nepali/two.jpeg" alt="History Book 2">
+      </div>
+      <div class="book-card">
+        <img src="Books_history&culture_nepali/three.jpeg" alt="History Book 3">
+      </div>
+      <div class="book-card">
+        <img src="Books_history&culture_nepali/four.jpeg" alt="History Book 4">
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- International Books Section -->
+<div id="internationalSection" class="category-section" style="display: none;">
+  <!-- Fiction Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-book"></i> Fiction</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="Books_fictional_international/athousand.jpeg" alt="A Thousand Splendid Suns">
+      </div>
+      <div class="book-card">
+        <img src="Books_fictional_international/harrypoter.jpeg" alt="Harry Potter">
+      </div>
+      <div class="book-card">
+        <img src="Books_fictional_international/thewoman.jpeg" alt="The Woman">
+      </div>
+      <div class="book-card">
+        <img src="Books_fictional_international/wedonot.jpeg" alt="We Do Not">
+      </div>
+    </div>
+  </section>
+
+  <!-- Non-Fiction Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-lightbulb-o"></i> Non-Fiction</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="Books_nonfictional_international/1929.jpeg" alt="1929">
+      </div>
+      <div class="book-card">
+        <img src="Books_nonfictional_international/marktwain.jpeg" alt="Mark Twain">
+      </div>
+      <div class="book-card">
+        <img src="Books_nonfictional_international/wagne.jpeg" alt="Wagner">
+      </div>
+      <div class="book-card">
+        <img src="Books_nonfictional_international/ww2.jpeg" alt="World War 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic and Educational Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-graduation-cap"></i> Academic and Educational</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="books_academicandeducational_international/academicone.jpeg" alt="Academic Book 1">
+      </div>
+      <div class="book-card">
+        <img src="books_academicandeducational_international/academictwo.jpeg" alt="Academic Book 2">
+      </div>
+      <div class="book-card">
+        <img src="books_academicandeducational_international/academicthree.jpeg" alt="Academic Book 3">
+      </div>
+      <div class="book-card">
+        <img src="books_academicandeducational_international/academicfour.jpeg" alt="Academic Book 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- History and Culture Section -->
+  <section class="genre-section">
+    <h2 class="section-title"><i class="fa fa-history"></i> History and Culture</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="Books_historyandculture_international/and.jpeg" alt="And">
+      </div>
+      <div class="book-card">
+        <img src="Books_historyandculture_international/culture.jpeg" alt="Culture">
+      </div>
+      <div class="book-card">
+        <img src="Books_historyandculture_international/historytwo.jpeg" alt="History Two">
+      </div>
+      <div class="book-card">
+        <img src="Books_historyandculture_international/worldhistory.jpg" alt="World History">
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>KITABGHAR</h3>
+      <p>Your gateway to the world of books</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="#">Genre</a></li>
+        <li><a href="bestseller.html">BestSeller</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kitabghar. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
