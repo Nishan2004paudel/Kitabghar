@@ -284,6 +284,151 @@ body, html {
   color: #4d0404;
 }
 
+/* Testimonial Section Styles */
+.testimonial-section {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ce2a14;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f1ef59;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #ce2a14, #ff6b4a);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.customer-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f1ef59;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.customer-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer-info {
+  flex: 1;
+}
+
+.customer-info h4 {
+  color: #4d0404;
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+}
+
+.customer-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.rating i {
+  color: #f1c40f;
+  font-size: 1.3rem;
+  text-shadow: 0 2px 5px rgba(241, 196, 15, 0.3);
+}
+
+.testimonial-content {
+  position: relative;
+  padding: 20px 30px;
+  background: rgba(241, 239, 89, 0.1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.testimonial-content p {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0;
+  font-style: italic;
+}
+
+.testimonial-content p strong {
+  color: #ce2a14;
+  font-style: normal;
+}
+
+.quote-icon {
+  color: #ce2a14;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.quote-icon.right {
+  float: right;
+  margin-top: 10px;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px dashed rgba(206, 42, 20, 0.2);
+}
+
+.testimonial-footer span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.testimonial-footer .verified {
+  color: #27ae60;
+}
+
+.testimonial-footer .verified i {
+  color: #27ae60;
+}
+
+.testimonial-footer .date i {
+  color: rgb(223, 110, 5);
+}
+
 /* Footer Styles */
 .footer {
   background-color: #f1ef59;
