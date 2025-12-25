@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="bestseller.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="bestseller.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="nav-links">
+    <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a  href="aboutus.html"><i class="fa fa-fw fa-book"></i> About Us</a>
+    <a href="genre.html"><i class="fa fa-fw fa-fire"></i> Genre</a>
+    <a class="active" href="#"><i class="fa fa-fw fa-star"></i> BestSeller</a>
+    <a  href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+  </div>
+  <div class="search-box">
+    <i class="fa fa-search"></i>
+    <input type="text" placeholder="Search">
+  </div>
+</div>
+
+<!-- Bestseller Title -->
+<div class="page-title-section">
+  <p class="discover-text">Discover the most loved books by our readers</p>
+</div>
+
+<!-- Nepali Bestsellers Section -->
+<section class="bestseller-category">
+  <h2 class="category-title"><i class="fa fa-flag"></i> Nepali Bestsellers</h2>
+  
+  <div class="bestseller-grid">
+    <!-- Fiction Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge fiction"><i class="fa fa-book"></i> Fiction</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="Books_fictional_nepali/palpasa cafe.jpeg" alt="Palpasa Cafe">
+      </div>
+      <div class="book-info">
+        <h3>Palpasa Cafe</h3>
+        <p class="author">by Narayan Wagle</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <span>4.5</span>
+        </div>
+        <p class="price">Rs. 450</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('Palpasa Cafe')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('Palpasa Cafe')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+
+    <!-- Non-Fiction Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge nonfiction"><i class="fa fa-lightbulb-o"></i> Non-Fiction</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="Books_nonfictional_nepal/aparacjit.jpeg" alt="Aparajit">
+      </div>
+      <div class="book-info">
+        <h3>Aparajit</h3>
+        <p class="author">by Madan Krishna Shrestha</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span>5.0</span>
+        </div>
+        <p class="price">Rs. 550</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('Aparajit')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('Aparajit')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+
+    <!-- Academic Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge academic"><i class="fa fa-graduation-cap"></i> Academic</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="Books_academicandeducational_nepal/one.jpeg" alt="Nepali Vyakaran">
+      </div>
+      <div class="book-info">
+        <h3>Nepali Vyakaran</h3>
+        <p class="author">by Dr. Krishnachandra Singh</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <span>4.0</span>
+        </div>
+        <p class="price">Rs. 350</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('Nepali Vyakaran')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('Nepali Vyakaran')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+
+    <!-- History & Culture Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge history"><i class="fa fa-history"></i> History</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="Books_history&culture_nepali/one.jpeg" alt="Nepal Ko Itihas">
+      </div>
+      <div class="book-info">
+        <h3>Nepal Ko Itihas</h3>
+        <p class="author">by Baburam Acharya</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <span>4.7</span>
+        </div>
+        <p class="price">Rs. 600</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('Nepal Ko Itihas')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('Nepal Ko Itihas')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- International Bestsellers Section -->
+<section class="bestseller-category">
+  <h2 class="category-title"><i class="fa fa-globe"></i> International Bestsellers</h2>
+  
+  <div class="bestseller-grid">
+    <!-- Fiction Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge fiction"><i class="fa fa-book"></i> Fiction</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="Books_fictional_international/harrypoter.jpeg" alt="Harry Potter">
+      </div>
+      <div class="book-info">
+        <h3>Harry Potter</h3>
+        <p class="author">by J.K. Rowling</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span>5.0</span>
+        </div>
+        <p class="price">Rs. 1,200</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('Harry Potter')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('Harry Potter')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+
+    <!-- Non-Fiction Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge nonfiction"><i class="fa fa-lightbulb-o"></i> Non-Fiction</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="Books_nonfictional_international/marktwain.jpeg" alt="Mark Twain">
+      </div>
+      <div class="book-info">
+        <h3>Autobiography of Mark Twain</h3>
+        <p class="author">by Mark Twain</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <span>4.6</span>
+        </div>
+        <p class="price">Rs. 950</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('Autobiography of Mark Twain')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('Autobiography of Mark Twain')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+
+    <!-- Academic Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge academic"><i class="fa fa-graduation-cap"></i> Academic</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="books_academicandeducational_international/academicone.jpeg" alt="Advanced Mathematics">
+      </div>
+      <div class="book-info">
+        <h3>Advanced Mathematics</h3>
+        <p class="author">by Thomas Calculus</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <span>4.2</span>
+        </div>
+        <p class="price">Rs. 1,500</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('Advanced Mathematics')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('Advanced Mathematics')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+
+    <!-- History & Culture Bestseller -->
+    <div class="bestseller-card">
+      <div class="badge-container">
+        <span class="category-badge history"><i class="fa fa-history"></i> History</span>
+        <span class="bestseller-badge"><i class="fa fa-trophy"></i> #1</span>
+      </div>
+      <div class="book-image">
+        <img src="Books_historyandculture_international/culture.jpeg" alt="World Cultures">
+      </div>
+      <div class="book-info">
+        <h3>World Cultures</h3>
+        <p class="author">by Edward Said</p>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span>4.9</span>
+        </div>
+        <p class="price">Rs. 850</p>
+      </div>
+      <div class="book-actions">
+        <button class="card-btn buy-btn" onclick="buyBook('World Cultures')"><i class="fa fa-shopping-cart"></i> Buy</button>
+        <button class="card-btn rent-btn" onclick="rentBook('World Cultures')"><i class="fa fa-clock-o"></i> Rent</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>KITABGHAR</h3>
+      <p>Your gateway to the world of books</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="#">BestSeller</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kitabghar. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
