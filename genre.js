@@ -28,11 +28,9 @@ function rentBook(bookName) {
 }
 
 function sellYourBook() {
-  alert('Redirecting to sell your book form...');
   // Add your sell book logic here
 }
 
 function rentYourBook() {
-  alert('Redirecting to rent out your book form...');
   // Add your rent out book logic here
 }
