@@ -26,11 +26,3 @@ function rentBook(bookName) {
   alert('Proceeding to rent: ' + bookName);
   // Add your rent logic here
 }
-
-function sellYourBook() {
-  // Add your sell book logic here
-}
-
-function rentYourBook() {
-  // Add your rent out book logic here
-}

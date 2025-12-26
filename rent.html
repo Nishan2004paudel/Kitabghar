@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="rent.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="contact.js"></script>
 </head>
@@ -20,6 +20,118 @@
     <input type="text" placeholder="Search">
   </div>
 </div>
+
+<div class="rent-form-section">
+  <h2 class="form-title">Rent Out Your Book</h2>
+  <form class="rent-form" id="rentForm">
+    <div class="form-group">
+      <label for="bookName"><i class="fa fa-book"></i> Book Name</label>
+      <input type="text" id="bookName" name="bookName" placeholder="Enter book name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="author"><i class="fa fa-user"></i> Author</label>
+      <input type="text" id="author" name="author" placeholder="Enter author name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="genre"><i class="fa fa-list"></i> Genre</label>
+      <select id="genre" name="genre" required>
+        <option value="">Select Genre</option>
+        <option value="fiction">Fiction</option>
+        <option value="non-fiction">Non-Fiction</option>
+        <option value="academic">Academic & Educational</option>
+        <option value="history">History & Culture</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="cost"><i class="fa fa-money"></i> Rent Cost (NPR per day)</label>
+      <input type="number" id="cost" name="cost" placeholder="Enter rent cost per day" min="1" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="rentDays"><i class="fa fa-calendar"></i> Valid Rent Days</label>
+      <input type="number" id="rentDays" name="rentDays" placeholder="Enter number of days available for rent" min="1" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="bookImage"><i class="fa fa-image"></i> Upload Book Image</label>
+      <div class="image-upload-container">
+        <input type="file" id="bookImage" name="bookImage" accept="image/*" required>
+        <div class="image-preview" id="imagePreview">
+          <i class="fa fa-cloud-upload"></i>
+          <p>Click to upload or drag and drop</p>
+        </div>
+      </div>
+    </div>
+    
+    <button type="submit" class="submit-btn">
+      <i class="fa fa-check"></i> Submit for Rent
+    </button>
+  </form>
+</div>
+
+<div class="feedback-section">
+  <h2 class="feedback-title">Why Rent With Us?</h2>
+  <div class="feedback-container">
+    <div class="feedback-card">
+      <div class="feedback-stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p class="feedback-text">"Renting out my books on Kitabghar has been a wonderful experience! I've earned over Rs. 5,000 in passive income while sharing my love of literature with fellow readers. The platform is easy to use, and I love that my books are being enjoyed by others instead of collecting dust on my shelf!"</p>
+      <div class="feedback-author">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Priya" alt="Customer">
+        <div>
+          <h4>Priya Sharma</h4>
+          <p>Book Renter since 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback-card">
+      <div class="feedback-stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p class="feedback-text">"As a college student, renting books from Kitabghar saved me so much money! Instead of buying expensive textbooks, I rent them for a semester at a fraction of the cost. The quality of books is always great, and the process is super smooth!"</p>
+      <div class="feedback-author">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ramesh" alt="Customer">
+        <div>
+          <h4>Ramesh Thapa</h4>
+          <p>Student, TU</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback-card">
+      <div class="feedback-stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p class="feedback-text">"I love how Kitabghar promotes sustainable reading! Renting books reduces waste and helps build a community of readers. I've discovered so many amazing Nepali authors through this platform. Highly recommend to all book lovers!"</p>
+      <div class="feedback-author">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sita" alt="Customer">
+        <div>
+          <h4>Sita Adhikari</h4>
+          <p>Book Enthusiast</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-section">
