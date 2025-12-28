@@ -43,10 +43,10 @@ function loadBookDetails() {
   starRating.innerHTML = starsHtml;
 
   // Calculate prices
-  const priceNum = parseFloat(price.replace(/[^0-9.]/g, '')) || 0;
+  const priceNum = parseInt(price.replace(/[^0-9]/g, '')) || 0;
   const originalPrice = Math.round(priceNum / 0.9); // Original price before 10% discount
-  const discount = originalPrice - priceNum;
-  const total = priceNum; // Final price after discount
+  const discount = Math.round(originalPrice - priceNum);
+  const total = Math.round(priceNum); // Final price after discount
 
   document.getElementById('originalPrice').textContent = 'Rs. ' + originalPrice;
   document.getElementById('summaryPrice').textContent = 'Rs. ' + originalPrice; // Show original in summary
