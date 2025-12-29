@@ -50,47 +50,7 @@ body {
   color: white;
 }
 
-/* Style the search box inside the navigation bar */
-.search-box {
-  display: flex;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 5px 12px;
-  margin-right: 14px;
-  gap: 6px;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
 
-.search-box:focus-within {
-  background-color: white;
-}
-
-.search-box i {
-  color: rgb(223, 110, 5);
-  font-size: 14px;
-}
-
-.search-box input[type=text] {
-  padding: 5px;
-  border: 0px;
-  background-color: transparent;
-  font-size: 14px;
-  text-align: center;
-  color: rgb(223, 110, 5);
-  outline: none;
-  width: 100px;
-}
-
-.search-box input[type=text]::placeholder {
-  color: rgb(223, 110, 5);
-  text-align: center;
-}
 
 /* Responsive navbar */
 @media screen and (max-width: 600px) {
@@ -106,9 +66,5 @@ body {
   .navbar a {
     padding: 10px 12px;
     font-size: 14px;
-  }
-  
-  .search-box {
-    margin: 10px 0;
   }
 }

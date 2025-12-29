@@ -12,10 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="bestseller.html" ${currentPage === 'bestseller.html' ? 'class="active"' : ''}><i class="fa fa-fw fa-star"></i> BestSeller</a>
         <a href="contact.html" ${currentPage === 'contact.html' ? 'class="active"' : ''}><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
       </div>
-      <div class="search-box">
-        <i class="fa fa-search"></i>
-        <input type="text" placeholder="Search">
-      </div>
     </div>
   `;
   
