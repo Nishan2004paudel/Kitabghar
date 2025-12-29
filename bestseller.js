@@ -1,9 +1,25 @@
 // Bestseller Page JavaScript Functions
 
-function buyBook(bookTitle) {
-  alert('Adding "' + bookTitle + '" to your cart!\n\nYou will be redirected to the checkout page.');
-  // In a real application, this would add the book to cart and redirect
-  console.log('Buy action triggered for: ' + bookTitle);
+function buyBook(bookButton) {
+  // Get book details from the card
+  const card = bookButton.closest('.bestseller-card');
+  const title = card.querySelector('.book-info h3').textContent;
+  const author = card.querySelector('.author').textContent.replace('by ', '');
+  const price = card.querySelector('.price').textContent;
+  const rating = card.querySelector('.rating span').textContent;
+  const image = card.querySelector('.book-image img').getAttribute('src');
+  
+  // Create URL parameters
+  const params = new URLSearchParams({
+    title: title,
+    author: author,
+    price: price,
+    rating: rating,
+    image: image
+  });
+  
+  // Redirect to buy page
+  window.location.href = 'buy.html?' + params.toString();
 }
 
 function rentBook(bookTitle) {
