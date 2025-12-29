@@ -39,7 +39,24 @@ function buyBook(bookCard) {
   window.location.href = 'buy.html?' + params.toString();
 }
 
-function rentBook(bookName) {
-  alert('Proceeding to rent: ' + bookName);
-  // Add your rent logic here
+function rentBook(bookButton) {
+  // Get book details from the card
+  const card = bookButton.closest('.book-card');
+  const title = card.querySelector('.book-info h3').textContent;
+  const author = card.querySelector('.author').textContent.replace('by ', '');
+  const price = card.querySelector('.price').textContent;
+  const rating = card.querySelector('.rating span').textContent;
+  const image = card.querySelector('.book-image img').getAttribute('src');
+  
+  // Create URL parameters
+  const params = new URLSearchParams({
+    title: title,
+    author: author,
+    price: price,
+    rating: rating,
+    image: image
+  });
+  
+  // Redirect to rentbook page
+  window.location.href = 'rentbook.html?' + params.toString();
 }
