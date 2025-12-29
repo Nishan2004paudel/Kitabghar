@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rent Book - Kitabghar</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="rentbook.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+  <script src="rentbook.js"></script>
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<div class="rent-container">
+  <div class="rent-content">
+    <!-- Book Details Section -->
+    <div class="book-details-section">
+      <div class="book-image-large">
+        <img id="bookImage" src="" alt="Book Cover">
+      </div>
+      <div class="book-info-detailed">
+        <h1 id="bookTitle"></h1>
+        <p class="author-name">by <span id="bookAuthor"></span></p>
+        <div class="rating-display">
+          <div class="stars" id="starRating"></div>
+          <span id="ratingValue"></span>
+        </div>
+        <div class="rental-badge">
+          <i class="fa fa-clock-o"></i> Available for Rent
+        </div>
+        <div class="book-description">
+          <h3>Description</h3>
+          <p id="bookDescription">This is an excellent book that has captivated readers worldwide. With its compelling narrative and profound insights, it offers an unforgettable reading experience that will stay with you long after you've finished the last page.</p>
+        </div>
+        <div class="book-features">
+          <div class="feature">
+            <i class="fa fa-truck"></i>
+            <span>Free Delivery</span>
+          </div>
+          <div class="feature">
+            <i class="fa fa-undo"></i>
+            <span>Easy Returns</span>
+          </div>
+          <div class="feature">
+            <i class="fa fa-shield"></i>
+            <span>Secure Deposit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rental Options Section -->
+    <div class="rental-section">
+      <h2><i class="fa fa-calendar"></i> Choose Rental Period</h2>
+      
+      <div class="rental-periods">
+        <div class="rental-option" data-days="7" data-discount="0">
+          <div class="rental-radio">
+            <input type="radio" name="rental" id="rental7" value="7">
+            <label for="rental7">
+              <div class="rental-duration">
+                <span class="days">7</span>
+                <span class="days-text">Days</span>
+              </div>
+              <div class="rental-info">
+                <span class="rental-price" id="price7"></span>
+                <span class="rental-desc">Short read</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="rental-option popular" data-days="15" data-discount="10">
+          <div class="popular-badge">Most Popular</div>
+          <div class="rental-radio">
+            <input type="radio" name="rental" id="rental15" value="15" checked>
+            <label for="rental15">
+              <div class="rental-duration">
+                <span class="days">15</span>
+                <span class="days-text">Days</span>
+              </div>
+              <div class="rental-info">
+                <span class="rental-price" id="price15"></span>
+                <span class="rental-desc">10% OFF - Recommended</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="rental-option" data-days="30" data-discount="20">
+          <div class="rental-radio">
+            <input type="radio" name="rental" id="rental30" value="30">
+            <label for="rental30">
+              <div class="rental-duration">
+                <span class="days">30</span>
+                <span class="days-text">Days</span>
+              </div>
+              <div class="rental-info">
+                <span class="rental-price" id="price30"></span>
+                <span class="rental-desc">20% OFF - Best Value</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deposit Info -->
+      <div class="deposit-info">
+        <div class="deposit-icon">
+          <i class="fa fa-info-circle"></i>
+        </div>
+        <div class="deposit-text">
+          <strong>Refundable Deposit:</strong> A security deposit of <span id="depositAmount"></span> will be charged. 
+          This will be fully refunded when you return the book in good condition.
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="payment-section">
+      <h2><i class="fa fa-credit-card"></i> Choose Payment Method</h2>
+      
+      <div class="payment-methods">
+        <!-- eSewa -->
+        <div class="payment-option" data-method="esewa">
+          <div class="payment-radio">
+            <input type="radio" name="payment" id="esewa" value="esewa">
+            <label for="esewa">
+              <div class="payment-icon esewa-icon">
+                <img src="https://esewa.com.np/common/images/esewa_logo.png" alt="eSewa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="fallback-icon" style="display:none;"><i class="fa fa-mobile"></i></div>
+              </div>
+              <div class="payment-info">
+                <span class="payment-name">eSewa</span>
+                <span class="payment-desc">Pay with eSewa digital wallet</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Khalti -->
+        <div class="payment-option" data-method="khalti">
+          <div class="payment-radio">
+            <input type="radio" name="payment" id="khalti" value="khalti">
+            <label for="khalti">
+              <div class="payment-icon khalti-icon">
+                <img src="https://web.khalti.com/static/img/logo1.png" alt="Khalti" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="fallback-icon" style="display:none;"><i class="fa fa-mobile"></i></div>
+              </div>
+              <div class="payment-info">
+                <span class="payment-name">Khalti</span>
+                <span class="payment-desc">Pay with Khalti digital wallet</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- IME Pay -->
+        <div class="payment-option" data-method="imepay">
+          <div class="payment-radio">
+            <input type="radio" name="payment" id="imepay" value="imepay">
+            <label for="imepay">
+              <div class="payment-icon imepay-icon">
+                <i class="fa fa-credit-card-alt"></i>
+              </div>
+              <div class="payment-info">
+                <span class="payment-name">IME Pay</span>
+                <span class="payment-desc">Pay with IME Pay</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Bank Transfer -->
+        <div class="payment-option" data-method="bank">
+          <div class="payment-radio">
+            <input type="radio" name="payment" id="bank" value="bank">
+            <label for="bank">
+              <div class="payment-icon bank-icon">
+                <i class="fa fa-university"></i>
+              </div>
+              <div class="payment-info">
+                <span class="payment-name">Bank Transfer</span>
+                <span class="payment-desc">Direct bank transfer</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Cash on Delivery -->
+        <div class="payment-option" data-method="cod">
+          <div class="payment-radio">
+            <input type="radio" name="payment" id="cod" value="cod">
+            <label for="cod">
+              <div class="payment-icon cod-icon">
+                <i class="fa fa-money"></i>
+              </div>
+              <div class="payment-info">
+                <span class="payment-name">Cash on Delivery</span>
+                <span class="payment-desc">Pay when you receive the book</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h3>Rental Summary</h3>
+        <div class="summary-row">
+          <span>Rental Period</span>
+          <span id="summaryPeriod">15 Days</span>
+        </div>
+        <div class="summary-row">
+          <span>Rental Fee</span>
+          <span id="summaryRental"></span>
+        </div>
+        <div class="summary-row">
+          <span>Security Deposit (Refundable)</span>
+          <span id="summaryDeposit"></span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery</span>
+          <span class="free-delivery">FREE</span>
+        </div>
+        <div class="summary-row discount" id="discountRow">
+          <span>Discount</span>
+          <span id="discountAmount" class="discount-text"></span>
+        </div>
+        <div class="summary-row total">
+          <span>Total Payable</span>
+          <span id="totalAmount"></span>
+        </div>
+        <div class="refund-note">
+          <i class="fa fa-info-circle"></i>
+          <span>You'll get <span id="refundAmount"></span> back when you return the book</span>
+        </div>
+      </div>
+
+      <!-- Checkout Button -->
+      <button class="checkout-btn" onclick="processRental()">
+        <i class="fa fa-lock"></i> Proceed to Rent
+      </button>
+
+      <p class="secure-note">
+        <i class="fa fa-shield"></i> Your payment information is secure and encrypted
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="footer-container"></div>
+
+</body>
+</html>

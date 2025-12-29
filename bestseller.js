@@ -22,10 +22,26 @@ function buyBook(bookButton) {
   window.location.href = 'buy.html?' + params.toString();
 }
 
-function rentBook(bookTitle) {
-  alert('Renting "' + bookTitle + '"!\n\nRental period: 30 days\nYou will receive an email with details.');
-  // In a real application, this would initiate the rental process
-  console.log('Rent action triggered for: ' + bookTitle);
+function rentBook(bookButton) {
+  // Get book details from the card
+  const card = bookButton.closest('.bestseller-card');
+  const title = card.querySelector('.book-info h3').textContent;
+  const author = card.querySelector('.author').textContent.replace('by ', '');
+  const price = card.querySelector('.price').textContent;
+  const rating = card.querySelector('.rating span').textContent;
+  const image = card.querySelector('.book-image img').getAttribute('src');
+  
+  // Create URL parameters
+  const params = new URLSearchParams({
+    title: title,
+    author: author,
+    price: price,
+    rating: rating,
+    image: image
+  });
+  
+  // Redirect to rentbook page
+  window.location.href = 'rentbook.html?' + params.toString();
 }
 
 // Add smooth scroll animation for page load
