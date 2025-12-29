@@ -43,34 +43,3 @@ function rentBook(bookName) {
   alert('Proceeding to rent: ' + bookName);
   // Add your rent logic here
 }
-
-// Make entire book card clickable
-document.addEventListener('DOMContentLoaded', function() {
-  const bookCards = document.querySelectorAll('.book-card');
-  
-  bookCards.forEach(card => {
-    // Add click event to book image and info sections
-    const bookImage = card.querySelector('.book-image');
-    const bookInfo = card.querySelector('.book-info');
-    
-    if (bookImage) {
-      bookImage.style.cursor = 'pointer';
-      bookImage.addEventListener('click', function() {
-        const buyBtn = card.querySelector('.buy-btn');
-        if (buyBtn) {
-          buyBook(buyBtn);
-        }
-      });
-    }
-    
-    if (bookInfo) {
-      bookInfo.style.cursor = 'pointer';
-      bookInfo.addEventListener('click', function() {
-        const buyBtn = card.querySelector('.buy-btn');
-        if (buyBtn) {
-          buyBook(buyBtn);
-        }
-      });
-    }
-  });
-});
