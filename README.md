@@ -94,8 +94,6 @@ Contributions are welcome! This is an **open-source** project.
 - **JavaScript** — DOM manipulation, dynamic content
 - **Font Awesome** — Icons
 
-## 👥 Authors
-
 Built with ❤️ as a learning project
 
 ## 📄 License
