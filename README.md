@@ -96,10 +96,7 @@ Contributions are welcome! This is an **open-source** project.
 
 ## 👥 Authors
 
-Built with ❤️ as a learning project by:
-- **Nishan** — Developer
-- **Rushab** — Developer  
-- **Manish** — Developer
+Built with ❤️ as a learning project
 
 ## 📄 License
 
