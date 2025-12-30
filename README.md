@@ -1,131 +1,113 @@
 # Kitabghar 📚
 
-A book marketplace website built with HTML, CSS, and JavaScript where users can buy, sell, and rent books.
+A book marketplace website where users can **buy**, **sell**, and **rent** books — built with pure HTML, CSS, and JavaScript.
 
-## 🎯 About This Project
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Open Source](https://img.shields.io/badge/Open%20Source-❤️-green)
 
-This is a learning project where I explored and practiced **HTML** and **CSS** fundamentals. Through building Kitabghar, I gained hands-on experience with:
-- HTML5 semantic markup
-- CSS styling and layouts
-- JavaScript interactivity
+## 🎯 About
+
+This project was built as a **learning exercise** to practice HTML and CSS fundamentals. It demonstrates:
+
 - Multi-page website structure
-- Form handling and UI components
+- CSS layouts (Flexbox, Grid)
+- JavaScript DOM manipulation
+- Reusable components (navbar, footer)
+- Form design and UI interactions
 
 ## ✨ Features
 
-- **Browse Books**: Explore books across different genres and categories
-- **Buy Books**: Purchase books from various collections
-- **Sell Books**: List your books for sale
-- **Rent Books**: Rent books for a specific period
-- **Genre Categories**: 
-  - Fictional (International & Nepali)
-  - Non-fictional (International & Nepal)
-  - Academic & Educational (International & Nepal)
-  - History & Culture (International & Nepali)
-- **Best Sellers**: Dedicated section for popular books
-- **About Us & Contact**: Information and contact pages
+| Feature | Description |
+|---------|-------------|
+| 📖 Browse Books | Explore books by genre — Fiction, Non-Fiction, Academic, History |
+| 🛒 Buy Books | Purchase books with payment gateway UI |
+| 💰 Sell Books | List your books for sale |
+| ⏰ Rent Books | Rent books for a specific period |
+| ⭐ Bestsellers | Discover top-rated books |
+| 🌏 Multi-region | Nepali & International book collections |
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/kitabghar.git
+
+# Open in browser
+cd kitabghar
+open home.html   # macOS
+xdg-open home.html   # Linux
+start home.html   # Windows
+```
+
+No build tools or dependencies required — just open in any browser!
 
 ## 📂 Project Structure
 
 ```
 kitabghar/
-├── home.html              # Homepage
-├── buy.html               # Buy books page
-├── sell.html              # Sell books page
-├── rent.html              # Rent books page
-├── rentbook.html          # Rent book details
-├── genre.html             # Genre categories
-├── bestseller.html        # Best sellers
-├── aboutus.html           # About page
-├── contact.html           # Contact page
-├── navbar.js/css          # Navigation bar
-├── footer.js/css          # Footer component
-├── Books/                 # Book data and images
-└── Professionals/         # Professional resources
+├── home.html          # Homepage
+├── genre.html         # Browse by genre
+├── bestseller.html    # Top selling books
+├── buy.html           # Purchase page
+├── sell.html          # Sell your books
+├── rent.html          # Rent out books
+├── rentbook.html      # Rent a book
+├── aboutus.html       # About the team
+├── contact.html       # Contact information
+├── *.css              # Stylesheets for each page
+├── *.js               # JavaScript files
+├── Books/             # Book images
+└── Professionals/     # Team photos
 ```
 
-## 🚧 Known Limitations
+## ⚠️ Known Limitations
 
-⚠️ **Mobile View is NOT Responsive** - This project currently does not support mobile devices properly. The layout and design are optimized for desktop viewing only.
+> **Mobile view is NOT fully responsive.**  
+> This project is optimized for **desktop browsers**. Mobile/tablet layouts need improvement.
 
 ## 🤝 Contributing
 
-This is an **open-source** project and contributions are welcome! Here's how you can help:
+Contributions are welcome! This is an **open-source** project.
 
-### Priority Areas:
-1. **Mobile Responsiveness** - Make the website responsive for mobile and tablet devices
-2. **UI/UX Improvements** - Enhance the user interface and experience
-3. **Code Optimization** - Refactor and improve the existing code
-4. **New Features** - Add shopping cart, user authentication, payment integration, etc.
-5. **Accessibility** - Improve accessibility features
+### Priority Areas for Contribution
 
-### How to Contribute:
+1. **📱 Mobile Responsiveness** — Make the site responsive
+2. **♿ Accessibility** — Add ARIA labels, keyboard navigation
+3. **🎨 UI/UX Polish** — Improve design consistency
+4. **⚡ Performance** — Optimize images and assets
+5. **✨ New Features** — Search, filters, user auth, etc.
 
-1. **Fork the repository**
-   ```bash
-   git clone https://github.com/yourusername/kitabghar.git
-   ```
+### How to Contribute
 
-2. **Create a new branch**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m "Add amazing feature"`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
-3. **Make your changes**
-   - Write clean, readable code
-   - Test your changes thoroughly
-   - Follow existing code style
+## 🛠️ Built With
 
-4. **Commit your changes**
-   ```bash
-   git add .
-   git commit -m "Add: your feature description"
-   ```
+- **HTML5** — Semantic markup
+- **CSS3** — Styling, Flexbox, Grid, animations
+- **JavaScript** — DOM manipulation, dynamic content
+- **Font Awesome** — Icons
 
-5. **Push to your fork and submit a Pull Request**
-   ```bash
-   git push origin feature/your-feature-name
-   ```
+## 👥 Authors
 
-## 🚀 Getting Started
+Built with ❤️ as a learning project by:
+- **Nishan** — Developer
+- **Rushab** — Developer  
+- **Manish** — Developer
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/kitabghar.git
-   ```
+## 📄 License
 
-2. Navigate to the project directory
-   ```bash
-   cd kitabghar
-   ```
-
-3. Open `home.html` in your browser
-   ```bash
-   # On Linux
-   xdg-open home.html
-   
-   # Or simply open the file in any web browser
-   ```
-
-## 🛠️ Technologies Used
-
-- **HTML5** - Structure and content
-- **CSS3** - Styling and layout
-- **JavaScript** - Interactivity and dynamic features
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-Built as a learning project to practice web development fundamentals.
-
-## 🌟 Acknowledgments
-
-- Thanks to everyone who contributes to making this project better!
-- Special appreciation for the open-source community
+This project is open source and available for learning and contribution.
 
 ---
 
-**Note**: This is a learning project and may contain areas that need improvement. Contributions and suggestions are highly appreciated!
+<p align="center">
+  <b>⭐ Star this repo if you find it helpful!</b><br>
+  <i>Made with ❤️ in Nepal</i>
+</p>
