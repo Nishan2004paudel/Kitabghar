@@ -36,9 +36,9 @@ git clone https://github.com/YOUR_USERNAME/kitabghar.git
 
 # Open in browser
 cd kitabghar
-open home.html   # macOS
-xdg-open home.html   # Linux
-start home.html   # Windows
+open index.html   # macOS
+xdg-open index.html   # Linux
+start index.html   # Windows
 ```
 
 No build tools or dependencies required — just open in any browser!
@@ -47,7 +47,7 @@ No build tools or dependencies required — just open in any browser!
 
 ```
 kitabghar/
-├── home.html          # Homepage
+├── index.html         # Homepage
 ├── genre.html         # Browse by genre
 ├── bestseller.html    # Top selling books
 ├── buy.html           # Purchase page
@@ -103,7 +103,7 @@ Built with ❤️ as a learning project by:
 
 ## 📄 License
 
-This project is open source and available for learning and contribution.
+This project is licensed under the **MIT License** — you're free to use, modify, and distribute this code. See the [LICENSE](LICENSE) file for details.
 
 ---
 

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="genre.html">Genre</a></li>
             <li><a href="bestseller.html">BestSeller</a></li>
